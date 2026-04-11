@@ -17,5 +17,8 @@
     linear-gradient(#e7e7e7 0%,#e7e7e7 0.01%, #1a1a1a 100%);
   --bg-page: var(--bg-gradient);
   --bg-color: #fff;
+  --accent-color:#000;
   --section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --header-padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
+  --border:  2px solid var(--accent-color);
 }

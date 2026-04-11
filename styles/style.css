@@ -11,6 +11,7 @@
 */
 
 .page {
+  padding-block: 100px;
   font-family: var(--main-font-family, sans-serif);
   font-size: var(--main-font-size, 18px);
   line-height: var(--main-line-height, 21px);
@@ -27,6 +28,7 @@
   margin-inline: auto;
   inline-size: var(--section-width);
   background-color: var(--bg-color);
+  outline: var(--border);
 }
 
 .header {
@@ -38,16 +40,18 @@
   text-transform: uppercase;
 }
 
-.visually-hidden {
-
-}
-
 .logo {
+  display: block;
+  margin-block-end: 20px;  
   font-size: var(--logo-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 100%;
 }
 
 .list {
-
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .card {
@@ -55,7 +59,7 @@
 }
 
 .headline {
- font-size: var(--headline-font-size);
+  font-size: var(--headline-font-size);
 }
 
 .card__title {
@@ -65,7 +69,8 @@
 }
 
 .card_block {
-
+  position: relative;
+  margin: 0;
 }
 
 .card__img {
