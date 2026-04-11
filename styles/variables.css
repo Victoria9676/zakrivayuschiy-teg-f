@@ -2,10 +2,14 @@
 :root {
   --main-font-family: "Inter";
   --accent-font-family: "PressStart2P";
-  --main-font-size: 18px;
+  
   --main-line-height: 21px;
   --main-font-weight: 410;
   --bold-font-weight: 715;
+  /*Шрифты*/
+  --main-font-size: 18px;
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --headline-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   /*Переменные для фона*/
   --bg-gradient:
     repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -13,5 +17,5 @@
     linear-gradient(#e7e7e7 0%,#e7e7e7 0.01%, #1a1a1a 100%);
   --bg-page: var(--bg-gradient);
   --bg-color: #fff;
-
+  --section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
