@@ -130,4 +130,20 @@
   filter: hue-rotate(90deg) blur(3px) brightness(80%);
 }
 
+.watermark {
+  position: absolute;
+  top: 25px;
+  right: 27px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: var(--accent-font-family), sans-serif;
+  font-size: 14px;
+  text-shadow:
+    1px 0 var(--text-watermark-color),
+    0 1px var(--text-watermark-color),
+    -1px 0 var(--text-watermark-color),
+    0 -1px var(--text-watermark-color);
+  mix-blend-mode: hard-light;
+
+}
+
 
