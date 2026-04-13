@@ -12,7 +12,7 @@
 
 .page {
   padding-block: 100px;
-  font-family: var(--main-font-family, sans-serif);
+  font-family: var(--main-font-family, sans-serif), sans-serif;
   font-size: var(--main-font-size, 18px);
   line-height: var(--main-line-height, 21px);
   min-inline-size: 320px;
@@ -36,7 +36,7 @@
   margin-block-end: 98px;
   padding-block: var(--header-padding);
   outline-offset: 0;
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family, sans-serif), sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -72,12 +72,12 @@
 .card_block {
   position: relative;
   margin: 0;
+  border: var(--border);
 }
 
 .card__img {
   display: block;
-  margin-inline: auto;
-  border: var(--border);
+  margin-inline: auto;  
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
@@ -133,7 +133,7 @@
   top: 25px;
   right: 27px;
   color: rgba(0, 0, 0, 0.5);
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family, sans-serif), sans-serif;
   font-size: 14px;
   text-shadow: 1px 1px 0 var(--text-watermark-color);
   mix-blend-mode: hard-light;
@@ -285,7 +285,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family, sans-serif), sans-serif;
   font-size: 14px;
   text-align: start;
 }
@@ -319,6 +319,7 @@
   column-gap: 20px;
   max-width: 100%;
   padding: 30px;
+  font-size: 14px;
 }
 
 .dialog[open]::backdrop {
@@ -332,8 +333,7 @@
 
 .dialog__info {
   padding-inline-end: 30px;
-  font-family: var(--accent-font-family), sans-serif;
-  font-size: 14px;
+  font-family: var(--accent-font-family, sans-serif), sans-serif;  
   text-transform: uppercase;
 }
 
@@ -341,7 +341,7 @@
   grid-column: 1 / -1;
   padding: 10px 20px;
   text-transform: uppercase;
-  line-height: 150%;
+  line-height: 90%;
 }
 /*Адаптив*/
 @media (width <= 375px) {
