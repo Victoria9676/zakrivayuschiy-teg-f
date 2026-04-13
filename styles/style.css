@@ -329,6 +329,7 @@
 .dialog__info {
   padding-inline-end: 30px;
   font-family: var(--accent-font-family), sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -337,4 +338,29 @@
   padding: 10px 20px;
   text-transform: uppercase;
   line-height: 150%;
+}
+/*Адаптив*/
+@media (width <= 375px) {
+  .header {
+    margin-block-end: 100px;
+    outline-offset: -2px;
+  }
+
+  .card__content {
+    padding-block-start: 25.6px;
+  }
+
+  .button-save {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .button-save svg {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .dialog[open] {
+    padding-inline: 40px;
+  }
 }
