@@ -135,12 +135,21 @@
   color: rgba(0, 0, 0, 0.5);
   font-family: var(--accent-font-family), sans-serif;
   font-size: 14px;
-  text-shadow:
+  text-shadow: 1px 1px 0 var(--text-watermark-color);
+  /*text-shadow:
     1px 0 var(--text-watermark-color),
     0 1px var(--text-watermark-color),
     -1px 0 var(--text-watermark-color),
-    0 -1px var(--text-watermark-color);
+    0 -1px var(--text-watermark-color);*/
   mix-blend-mode: hard-light;
+}
+
+@supports (-webkit-text-stroke: 1px var(--text-watermark-color)) or (text-stroke: 1px var(--text-watermark-color)) {
+  .watermark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-watermark-color);
+    text-stroke: 1px var(--text-watermark-color);
+  }
 }
 
 .card__buttons-group {
